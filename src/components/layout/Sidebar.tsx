@@ -2,19 +2,13 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
-  LayoutDashboard,
   FileText,
-  KeyRound,
-  Import,
-  UploadCloud,
   Package,
-  HardDrive,
   Bot,
   Link2,
   Bookmark,
   Puzzle,
   ListOrdered,
-  Settings,
   HelpCircle,
   MessageSquare,
   UserRound,
