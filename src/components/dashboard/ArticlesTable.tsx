@@ -2,7 +2,6 @@ import {
   ChevronDown,
   ChevronUp,
   MoreHorizontal,
-  EyeIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -26,9 +25,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
-import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Article } from "./data";
 
@@ -37,7 +34,7 @@ interface ArticlesTableProps {
   currentTab: string;
 }
 
-export function ArticlesTable({ articles, currentTab }: ArticlesTableProps) {
+export function ArticlesTable({ articles }: ArticlesTableProps) {
   const [sortColumn, setSortColumn] = useState<keyof Article | null>("title");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
   const [entriesPerPage, setEntriesPerPage] = useState("10");
